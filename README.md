@@ -8,7 +8,7 @@
 
 <img src="docs/images/05_logo_ratis_labs.png" alt="RATIS Labs" width="260"/>
 
-# 🏭 RATISS-ATELIER — L'Atelier de Fabrication Souverain
+# 🏭 RATISS-ATELIER — The Sovereign Manufacturing Workshop
 
 [![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
@@ -16,76 +16,76 @@
 [![Tests](https://img.shields.io/badge/tests-14%2F14-success)](tests/)
 [![ORCID](https://img.shields.io/badge/ORCID-0009--0000--4092--5313-a6ce39)](https://orcid.org/0009-0000-4092-5313)
 
-> Propriété intellectuelle : **JOHNKING0 & Jonathan Evina** · RATIS Labs (Cameroun)
+> Intellectual property: **JOHNKING0 & Jonathan Evina** · RATIS Labs (Cameroon)
 > ORCID [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313)
 
-**[📘 Document de conception complet → DESIGN.md](DESIGN.md)** ·
-**[🔧 Guide de montage → docs/ASSEMBLY.md](docs/ASSEMBLY.md)** ·
-**[📦 Liste de matériel → docs/BOM.md](docs/BOM.md)** ·
-**[🔬 Références → docs/PHYSICS.md](docs/PHYSICS.md)** ·
-**[🧮 Validation math/physique → scripts/validate_physics.py](scripts/validate_physics.py)**
+**[📘 Full design document → DESIGN.md](DESIGN.md)** ·
+**[🔧 Assembly guide → docs/ASSEMBLY.md](docs/ASSEMBLY.md)** ·
+**[📦 Bill of materials → docs/BOM.md](docs/BOM.md)** ·
+**[🔬 References → docs/PHYSICS.md](docs/PHYSICS.md)** ·
+**[🧮 Math/physics validation → scripts/validate_physics.py](scripts/validate_physics.py)**
 
 </div>
 
-> **Priorité 4** de la doctrine de souveraineté technologique. Impression 3D
-> (FDM) + usinage CNC 3 axes, avec **validation FEM in silico** avant chaque
-> fabrication. La moindre pièce cassée n'arrête plus jamais le projet.
+> **Priority 4** of the technological sovereignty doctrine. 3D printing
+> (FDM) + 3-axis CNC machining, with **in silico FEM validation** before every
+> fabrication. A broken part never stops the project again.
 
 ---
 
-> 🇨🇲 **Un mot au Gouvernement de la République du Cameroun**
+> 🇨🇲 **A word to the Government of the Republic of Cameroon**
 >
-> Un support de cristal, un bloc de PCR, une simple équerre de précision :
-> importés, ces composants coûtent des mois d'attente et des prix d'or.
-> RATISS-ATELIER rend le Cameroun **capable de fabriquer lui-même** les pièces
-> de ses instruments scientifiques — imprimées en 3D ou usinées à la CNC,
-> validées par simulation mécanique avant de consommer le moindre gramme de
-> matière. C'est la boucle de prototypage rapide, en heures et non en semaines,
-> qui forme au passage une génération de techniciens CAO/CNC. **La souveraineté
-> industrielle n'attend pas : elle se fabrique.**
+> A crystal mount, a PCR block, a simple precision square: imported, these
+> components cost months of waiting and gold prices.
+> RATISS-ATELIER makes Cameroon **able to manufacture itself** the parts
+> of its scientific instruments — 3D printed or CNC machined,
+> validated by mechanical simulation before consuming a single gram of
+> material. This is the rapid-prototyping loop, in hours rather than weeks,
+> which along the way trains a generation of CAD/CNC technicians. **Industrial
+> sovereignty does not wait: it is manufactured.**
 
 ---
 
-## 🖼️ Le projet en images
+## 🖼️ The project in images
 
-### 🖨️ Plan de conception — Imprimante 3D FDM
-![Plan imprimante](docs/images/01_plan_imprimante.png)
+### 🖨️ Design blueprint — FDM 3D printer
+![Printer blueprint](docs/images/01_plan_imprimante.png)
 
-### ⚙️ Plan de conception — Fraiseuse CNC 3 axes
-![Plan CNC](docs/images/02_plan_cnc.png)
+### ⚙️ Design blueprint — 3-axis CNC milling machine
+![CNC blueprint](docs/images/02_plan_cnc.png)
 
-### 🏭 Les machines une fois montées
-![Machines montées](docs/images/03_machines_montees.png)
+### 🏭 The machines once assembled
+![Assembled machines](docs/images/03_machines_montees.png)
 
-### 📐 Validation FEM — flexion & fatigue thermique
+### 📐 FEM validation — bending & thermal fatigue
 ![FEM](docs/images/04_fem_validation.png)
 
-### 🧪 Sélection de matériau — la température de service élimine d'office
-![Choix matériau](docs/images/06_choix_materiau.png)
+### 🧪 Material selection — service temperature eliminates candidates outright
+![Material choice](docs/images/06_choix_materiau.png)
 
-### 📉 Carte de contrainte — on renforce l'encastrement, pas le bout
-![Carte contrainte](docs/images/07_carte_contrainte.png)
+### 📉 Stress map — we reinforce the clamped end, not the tip
+![Stress map](docs/images/07_carte_contrainte.png)
 
 ---
 
-## 🎯 Pourquoi c'est une rupture
+## 🎯 Why this is a breakthrough
 
-Les pièces détachées de laboratoire mettent des mois à arriver et coûtent une
-fortune. La moindre pièce cassée arrête tout un projet. L'atelier souverain
-brise ce verrou : **on conçoit, on simule (FEM), on fabrique, on teste, on
-itère — en heures**.
+Laboratory spare parts take months to arrive and cost a
+fortune. A single broken part stops a whole project. The sovereign workshop
+breaks this lock: **we design, we simulate (FEM), we fabricate, we test, we
+iterate — in hours**.
 
-Le simulateur FEM (`ratiss_atelier/fem.py`) valide chaque pièce **avant**
-fabrication : flexion (Euler-Bernoulli), tenue en charge avec coefficient de
-sécurité, dilatation thermique, fatigue thermique (Coffin-Manson). On ne
-consomme du filament ou de l'aluminium que pour une pièce **déjà validée**.
+The FEM simulator (`ratiss_atelier/fem.py`) validates each part **before**
+fabrication: bending (Euler-Bernoulli), load-bearing with safety
+factor, thermal expansion, thermal fatigue (Coffin-Manson). Filament or
+aluminium is consumed only for a part that is **already validated**.
 
-## 🔧 Les machines
+## 🔧 The machines
 
-| Machine | Rôle | Précision |
+| Machine | Role | Precision |
 |---------|------|-----------|
-| Imprimante 3D FDM | boîtiers, supports, pièces plastiques | ±0.1 mm |
-| Fraiseuse CNC 3 axes | blocs PCR, supports cristaux, alu/laiton | ±0.05 mm |
+| FDM 3D printer | enclosures, mounts, plastic parts | ±0.1 mm |
+| 3-axis CNC milling machine | PCR blocks, crystal mounts, alu/brass | ±0.05 mm |
 
 ## 🚀 Quick start
 
@@ -93,7 +93,7 @@ consomme du filament ou de l'aluminium que pour une pièce **déjà validée**.
 pip install numpy matplotlib pytest
 cd ratiss-atelier
 
-# Choisir le bon matériau pour une pièce
+# Choose the right material for a part
 PYTHONPATH=. python -c "
 from ratiss_atelier.fem import choose_material, Beam, will_survive
 for r in choose_material(force_n=10, length_m=0.1, t_service_c=90):
@@ -103,75 +103,75 @@ for r in choose_material(force_n=10, length_m=0.1, t_service_c=90):
 # Figures
 PYTHONPATH=. python scripts/generate_figures.py
 
-# VALIDATION MATH & PHYSIQUE (Euler-Bernoulli, Coffin-Manson, matériaux)
+# MATH & PHYSICS VALIDATION (Euler-Bernoulli, Coffin-Manson, materials)
 PYTHONPATH=. python scripts/validate_physics.py
 
-# G-CODE de la pièce de réception (FEM validée → instructions CNC)
+# G-CODE of the acceptance part (FEM validated → CNC instructions)
 PYTHONPATH=. python scripts/generate_gcode.py
 
 # Tests
 PYTHONPATH=. pytest tests/ -q
 ```
 
-## 🏗️ Architecture du dépôt
+## 🏗️ Repository architecture
 
 ```
 ratiss_atelier/
-├── fem.py              # FEM : flexion, contrainte, dilatation, fatigue
+├── fem.py              # FEM: bending, stress, expansion, fatigue
 scripts/
-├── generate_figures.py # 7 figures (plans, machines, FEM, sélection, logo)
-├── validate_physics.py # Validation croisée (recalcul indépendant)
-├── generate_gcode.py   # FEM validée → G-code GRBL (boucle fabrication)
+├── generate_figures.py # 7 figures (blueprints, machines, FEM, selection, logo)
+├── validate_physics.py # Cross validation (independent recalculation)
+├── generate_gcode.py   # FEM validated → GRBL G-code (fabrication loop)
 tests/
 ├── test_atelier.py     # 14 tests
 docs/
-├── PHYSICS.md          # Références (Gere, Callister, Coffin)
-├── BOM.md              # Liste de matériel (~759 k FCFA, phase 1 ~343 k)
-├── ASSEMBLY.md         # Guide de montage + calibration
-└── images/             # 7 figures générées
-DESIGN.md               # Document de conception complet
+├── PHYSICS.md          # References (Gere, Callister, Coffin)
+├── BOM.md              # Bill of materials (~759 k FCFA, phase 1 ~343 k)
+├── ASSEMBLY.md         # Assembly guide + calibration
+└── images/             # 7 generated figures
+DESIGN.md               # Full design document
 LICENSE                 # MIT
-CITATION.cff            # Citation académique (ORCID)
+CITATION.cff            # Academic citation (ORCID)
 ```
 
-**La boucle complète** : `fem.py` valide la pièce → `generate_gcode.py` la
-transforme en instructions machine → la CNC l'usine → la mesure recalibre la
-FEM. Simulation et fabrication ne font qu'un.
+**The full loop**: `fem.py` validates the part → `generate_gcode.py` turns it
+into machine instructions → the CNC machines it → measurement recalibrates the
+FEM. Simulation and fabrication are one.
 
-## 🧮 Validation mathématique & physique
+## 🧮 Mathematical & physics validation
 
-`scripts/validate_physics.py` recalcule **indépendamment** chaque résultat FEM
-et le confronte à la littérature (Gere & Goodno, Callister, Coffin 1954) —
-**8/8 validations** : cas manuel de flexion exact au mm près, lois d'échelle
-δ∝F / δ∝L³ / δ∝1/E, dilatation, fatigue, sélection par température de service.
+`scripts/validate_physics.py` **independently** recalculates each FEM result
+and confronts it with the literature (Gere & Goodno, Callister, Coffin 1954) —
+**8/8 validations**: manual bending case exact to the mm, scaling laws
+δ∝F / δ∝L³ / δ∝1/E, expansion, fatigue, selection by service temperature.
 
-## 💰 Coût et montage
+## 💰 Cost and setup
 
-- **[📦 BOM détaillée](docs/BOM.md)** : ~759 k FCFA l'atelier complet, ou
-  **~343 k pour l'imprimante 3D seule en phase 1** — elle produit déjà les
-  pièces des priorités 1-3 et autofinance la CNC.
-- **[🔧 Guide de montage](docs/ASSEMBLY.md)** : équerrage au comparateur,
-  calibration (steps/mm, débit), arrêt d'urgence testé, pièce de réception,
-  boucle de recalibrage FEM sur mesures réelles.
+- **[📦 Detailed BOM](docs/BOM.md)**: ~759 k FCFA for the complete workshop, or
+  **~343 k for the 3D printer alone in phase 1** — it already produces the
+  parts of priorities 1-3 and self-finances the CNC.
+- **[🔧 Assembly guide](docs/ASSEMBLY.md)**: squaring with a dial indicator,
+  calibration (steps/mm, flow rate), tested emergency stop, acceptance part,
+  FEM recalibration loop on real measurements.
 
-## ⚠️ Transparence ingénierie
+## ⚠️ Engineering transparency
 
-Le modèle FEM est **simplifié** (poutre d'Euler-Bernoulli, Coffin-Manson) —
-suffisant pour le dimensionnement, pas un calcul éléments finis complet.
-La validation finale exige des essais mécaniques réels sur les pièces
-fabriquées. **Toujours itérer, jamais figé.**
+The FEM model is **simplified** (Euler-Bernoulli beam, Coffin-Manson) —
+enough for sizing, not a full finite-element computation.
+Final validation requires real mechanical tests on the fabricated
+parts. **Always iterating, never frozen.**
 
 ---
 
-## 📄 Licence & citation
+## 📄 License & citation
 
-- **Licence** : [MIT](LICENSE) — © JOHNKING0 & Jonathan Evina, RATIS Labs (Cameroun).
-- **Citation** : voir [CITATION.cff](CITATION.cff) — ORCID
+- **License**: [MIT](LICENSE) — © JOHNKING0 & Jonathan Evina, RATIS Labs (Cameroon).
+- **Citation**: see [CITATION.cff](CITATION.cff) — ORCID
   [0009-0000-4092-5313](https://orcid.org/0009-0000-4092-5313).
 
 ---
 
-*Doctrine matérielle souveraine du Cameroun — Priorité 4 sur 5.*
+*Cameroon sovereign hardware doctrine — Priority 4 of 5.*
 
 ## Installation
 
